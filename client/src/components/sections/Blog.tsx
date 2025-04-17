@@ -61,16 +61,16 @@ export function Blog() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.5 }}
         >
-          <Link href="/blog">
-            <a>
-              <SocialButton
-                href="/blog"
-                icon={<Book className="w-5 h-5" />}
-                label="View All Posts"
-                variant="outline"
-              />
-            </a>
-          </Link>
+          <SocialButton
+            href="/blog"
+            icon={<Book className="w-5 h-5" />}
+            label="View All Posts"
+            variant="outline"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/blog";
+            }}
+          />
         </motion.div>
       </div>
     </section>

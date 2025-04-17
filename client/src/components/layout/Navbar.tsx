@@ -39,11 +39,12 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0">
-            <Link href="/">
-              <a className="text-xl font-bold font-heading text-gray-900 dark:text-white hover:text-primary hover:dark:text-primary transition-colors duration-300">
-                Vrushank Patel
-              </a>
-            </Link>
+            <button
+              onClick={() => window.location.href = "/"}
+              className="text-xl font-bold font-heading text-gray-900 dark:text-white hover:text-primary hover:dark:text-primary transition-colors duration-300"
+            >
+              Vrushank Patel
+            </button>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
@@ -56,11 +57,12 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Link href="/resume">
-              <a className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-300">
-                Resume
-              </a>
-            </Link>
+            <button
+              onClick={() => window.location.href = "/resume"}
+              className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-300"
+            >
+              Resume
+            </button>
           </div>
           
           <div className="flex items-center gap-2">
@@ -100,11 +102,12 @@ export function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Link href="/resume">
-                <a className="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary hover:bg-primary/90 transition-colors duration-300">
-                  Resume
-                </a>
-              </Link>
+              <button
+                onClick={() => window.location.href = "/resume"}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-white bg-primary hover:bg-primary/90 transition-colors duration-300"
+              >
+                Resume
+              </button>
             </div>
           </motion.div>
         )}

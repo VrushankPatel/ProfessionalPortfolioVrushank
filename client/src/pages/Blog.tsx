@@ -28,14 +28,15 @@ export default function Blog() {
             <h1 className="text-3xl md:text-4xl font-bold font-heading text-gray-900 dark:text-white">
               Blog
             </h1>
-            <Link href="/">
-              <a className="inline-flex items-center gap-2 text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 transition-colors">
-                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-                <span className="font-medium">Back to Home</span>
-              </a>
-            </Link>
+            <button 
+              onClick={() => window.location.href = "/"}
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
+            >
+              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              <span className="font-medium">Back to Home</span>
+            </button>
           </div>
 
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mb-12">

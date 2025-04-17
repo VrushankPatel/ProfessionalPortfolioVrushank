@@ -61,13 +61,13 @@ export function BlogCard({
         </p>
       </div>
       <div className="px-6 py-4 bg-gray-50 dark:bg-gray-700/50">
-        <Link href={`/blog/${id}`}>
-          <a>
-            <Button variant="link" className="text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 p-0 h-auto">
-              Read more <ChevronRight className="w-4 h-4 ml-1" />
-            </Button>
-          </a>
-        </Link>
+        <Button 
+          variant="link" 
+          className="text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 p-0 h-auto"
+          onClick={() => window.location.href = `/blog/${id}`}
+        >
+          Read more <ChevronRight className="w-4 h-4 ml-1" />
+        </Button>
       </div>
     </motion.div>
   );

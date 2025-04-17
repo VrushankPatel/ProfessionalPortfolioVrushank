@@ -47,11 +47,12 @@ export default function BlogPost() {
       <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Post not found</h1>
-          <Link href="/blog">
-            <a className="text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300">
-              Back to all posts
-            </a>
-          </Link>
+          <button
+            onClick={() => window.location.href = "/blog"}
+            className="text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300"
+          >
+            Back to all posts
+          </button>
         </div>
       </div>
     );
@@ -68,12 +69,13 @@ export default function BlogPost() {
       <main className="py-16 bg-gray-50 dark:bg-gray-900 min-h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="mb-8">
-            <Link href="/blog">
-              <a className="inline-flex items-center gap-2 text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 transition-colors mb-6">
-                <ArrowLeft className="w-5 h-5" />
-                <span className="font-medium">Back to all posts</span>
-              </a>
-            </Link>
+            <button
+              onClick={() => window.location.href = "/blog"}
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 dark:text-primary-400 dark:hover:text-primary-300 transition-colors mb-6"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span className="font-medium">Back to all posts</span>
+            </button>
             
             {post.imageUrl && (
               <div className="w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
