@@ -34,7 +34,7 @@ export function CertificationCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 group"
+      className="flex flex-col bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 group h-[230px]"
       whileHover={{ y: -5 }}
     >
       <div className="p-6 flex-grow">
