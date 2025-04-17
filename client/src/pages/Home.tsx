@@ -5,6 +5,7 @@ import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
 import { Skills } from "@/components/sections/Skills";
 import { Certifications } from "@/components/sections/Certifications";
+import { Blog } from "@/components/sections/Blog";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Certifications />
+        <Blog />
       </main>
       <Footer />
     </motion.div>

@@ -1,4 +1,92 @@
 export const profileData = {
+  blogPosts: [
+    {
+      id: "apex-crypto-arbitrage-detection",
+      title: "Introducing APEX: A Real-time Crypto Arbitrage Detection System",
+      excerpt: "APEX is a sophisticated Go-based system designed to detect arbitrage opportunities across cryptocurrency exchanges in real-time. Learn how it identifies profitable trading opportunities across multiple platforms.",
+      date: "April 15, 2024",
+      readTime: "5 min read",
+      tags: ["Go", "Cryptocurrency", "WebSocket", "Real-time Analysis"],
+      imageUrl: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=1000&auto=format&fit=crop",
+      content: `
+# Introducing APEX: A Real-time Crypto Arbitrage Detection System
+
+## What is APEX?
+
+APEX is a sophisticated Go-based system designed to detect arbitrage opportunities across cryptocurrency exchanges in real-time. It's a comprehensive solution for monitoring price differences and identifying profitable trading opportunities across multiple exchanges.
+
+## Key Features
+
+- **Real-time Market Data**: Connects to multiple exchanges via WebSockets for instant price updates
+- **Cross-Exchange Arbitrage Detection**: Scans for price discrepancies between exchanges
+- **Triangular Arbitrage Detection**: Identifies profitable trading loops within a single exchange
+- **Web Interface**: User-friendly dashboard for monitoring arbitrage opportunities
+- **Alert System**: Notifies users of high-confidence arbitrage opportunities
+- **Backtesting Module**: Test strategies against historical data
+
+## Technical Architecture
+
+APEX is built with Go, chosen for its performance characteristics, especially concurrency handling which is critical for processing multiple exchange data streams simultaneously. The system architecture consists of:
+
+1. **Data Collection Layer**: Uses WebSocket connections to subscribe to live order book updates from exchanges
+2. **Analysis Engine**: Processes and analyzes incoming data to detect arbitrage patterns
+3. **Alert System**: Evaluates opportunities against risk parameters and triggers notifications
+4. **Web Dashboard**: Visualizes opportunities and provides a configuration interface
+
+## How APEX Works
+
+APEX continuously monitors cryptocurrency prices across different exchanges. When it detects a price difference exceeding a specified threshold (accounting for fees), it calculates the potential profit and presents the opportunity to the user.
+
+For example, if Bitcoin is trading at $50,000 on Exchange A and $50,500 on Exchange B, APEX would identify this as a potential 1% arbitrage opportunity (minus fees).
+
+The system also identifies triangular arbitrage opportunities within a single exchange. For instance, it might detect a profitable trading loop: BTC → ETH → LTC → BTC.
+
+## Development Challenges
+
+Building APEX presented several interesting challenges:
+
+1. **Exchange API Variability**: Each exchange has unique API specifications and rate limits
+2. **Latency Management**: Ensuring opportunity detection was fast enough to be actionable
+3. **Fee Optimization**: Accounting for various fee structures across exchanges
+4. **Reliability**: Building a system that could operate continuously without interruption
+
+## Future Development
+
+APEX continues to evolve with planned enhancements:
+
+- Machine learning models to predict arbitrage opportunities
+- Automated execution capabilities for verified opportunities
+- Additional exchanges and cryptocurrency pairs
+- Mobile application for on-the-go monitoring
+
+## Conclusion
+
+APEX represents a powerful tool for cryptocurrency traders looking to capitalize on market inefficiencies. By leveraging Go's performance capabilities and a well-designed architecture, it provides real-time insights that would be impossible to identify manually.
+
+Check out the [full documentation](https://apex-docs.readthedocs.io/en/latest/) or visit the [GitHub repository](https://github.com/VrushankPatel/apex) to learn more.
+      `
+    },
+    {
+      id: "building-distributed-systems-go",
+      title: "Building Distributed Systems with Go: Lessons from Open Source Projects",
+      excerpt: "Insights and best practices gleaned from developing distributed systems in Go, with real-world examples from my projects APEX and Bluelink.",
+      date: "March 28, 2024",
+      readTime: "7 min read",
+      tags: ["Go", "Distributed Systems", "Microservices", "Architecture"],
+      imageUrl: "https://images.unsplash.com/photo-1545987796-200677ee1011?q=80&w=1000&auto=format&fit=crop",
+      content: ""
+    },
+    {
+      id: "real-time-trading-systems",
+      title: "Architecting Real-time Trading Systems: Performance and Reliability",
+      excerpt: "A deep dive into the architectural considerations for building high-performance trading systems that can handle millions of transactions per day.",
+      date: "February 15, 2024",
+      readTime: "10 min read",
+      tags: ["Java", "Trading", "Performance", "Architecture"],
+      imageUrl: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?q=80&w=1000&auto=format&fit=crop",
+      content: ""
+    }
+  ],
   name: "Vrushank Patel",
   title: "Senior Software Developer",
   company: "NASDAQ",
