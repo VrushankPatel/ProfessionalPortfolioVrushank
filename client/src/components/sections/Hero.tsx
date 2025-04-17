@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-24 bg-hero-pattern">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 md:gap-16">
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:items-center justify-between gap-8 md:gap-16">
           <div className="w-full lg:w-3/5 space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div 
-              className="flex flex-wrap gap-4 pt-2 mb-12"
+              className="flex flex-wrap gap-4 pt-2 mb-12 pb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -63,7 +63,7 @@ export function Hero() {
           </div>
 
           <motion.div 
-            className="w-full lg:w-2/5 flex lg:justify-end justify-center"
+            className="w-full lg:w-2/5 flex items-center justify-center pb-12"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
@@ -73,7 +73,7 @@ export function Hero() {
               <img 
                 src={profilePic} 
                 alt={`Headshot of ${name}`} 
-                className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white dark:border-gray-800 shadow-lg object-cover animate-float"
+                className="relative z-10 w-72 h-72 md:w-[340px] md:h-[340px] lg:w-[400px] lg:h-[400px] rounded-full border-4 border-white dark:border-gray-800 shadow-lg object-cover animate-float"
               />
               <div className="absolute -bottom-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-2 shadow-lg z-20">
                 <img 
