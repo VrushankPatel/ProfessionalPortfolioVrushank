@@ -8,8 +8,8 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pt-16 md:pt-20 lg:pt-24 bg-hero-pattern">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 md:gap-12">
-          <div className="w-full lg:w-1/2 space-y-6">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8 md:gap-16">
+          <div className="w-full lg:w-3/5 space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div 
-              className="flex flex-wrap gap-4 pt-2 mb-8"
+              className="flex flex-wrap gap-4 pt-2 mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -63,7 +63,7 @@ export function Hero() {
           </div>
 
           <motion.div 
-            className="w-full lg:w-1/3 flex justify-center"
+            className="w-full lg:w-2/5 flex lg:justify-end justify-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
@@ -73,13 +73,13 @@ export function Hero() {
               <img 
                 src={profilePic} 
                 alt={`Headshot of ${name}`} 
-                className="relative z-10 w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-white dark:border-gray-800 shadow-lg object-cover animate-float"
+                className="relative z-10 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-white dark:border-gray-800 shadow-lg object-cover animate-float"
               />
               <div className="absolute -bottom-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-2 shadow-lg z-20">
                 <img 
                   src={cspoBadge} 
                   alt="CSPO Certification Badge" 
-                  className="w-12 h-12"
+                  className="w-14 h-14"
                 />
               </div>
             </div>
